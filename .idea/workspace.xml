@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d9ab4633-0c17-49be-aef9-ad5bd5498d51" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/connection/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/entity/EntityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/inventory/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/item/ItemStackBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/item/ItemStackDestroyer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/item/MaterialUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/skin/SkinUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/sound/SoundUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/text/ColorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/text/TextUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <list id="ce6a5935-0c5b-4cdc-ae17-63d44478dde5" name="Changes by wilhe" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2lOXvGrOkZlSeCgncYDMvBbIz7A" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Documents/Github Repositories/Minestom-Utils/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\Github Repositories\Minestom-Utils\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="rip.snicon.item" />
+      <recent name="rip.snicon.color" />
+      <recent name="rip.snicon.entity" />
+      <recent name="rip.snicon.skin" />
+      <recent name="rip.snicon.sound" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9ab4633-0c17-49be-aef9-ad5bd5498d51" name="Changes" comment="" />
+      <created>1725052325920</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725052325920</updated>
+      <workItem from="1725052327017" duration="7804000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
