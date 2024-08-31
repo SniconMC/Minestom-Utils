@@ -20,12 +20,12 @@ dependencies {
     implementation("net.kyori:adventure-text-minimessage:4.17.0") // MiniMessage
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
-
-
-tasks.withType(JavaCompile::class) {
+tasks.withType<JavaCompile> {
     sourceCompatibility = "21"
     targetCompatibility = "21"
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
