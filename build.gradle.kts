@@ -28,7 +28,6 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
     }
-    to
 }
 
 tasks.withType(JavaCompile::class) {
