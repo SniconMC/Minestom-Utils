@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d9ab4633-0c17-49be-aef9-ad5bd5498d51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/item/ItemStackBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/item/ItemStackBuilder.java" afterDir="false" />
     </list>
-    <list id="ce6a5935-0c5b-4cdc-ae17-63d44478dde5" name="Changes by wilhe" comment="" />
+    <list id="ce6a5935-0c5b-4cdc-ae17-63d44478dde5" name="Changes by wilhe" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/item/ItemStackBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/item/ItemStackBuilder.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +67,23 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/com/github/sniconmc/item/ItemStackBuilder.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="3" changelist="ce6a5935-0c5b-4cdc-ae17-63d44478dde5" />
+        <range start1="4" end1="4" start2="5" end2="6" changelist="ce6a5935-0c5b-4cdc-ae17-63d44478dde5" />
+        <range start1="11" end1="11" start2="13" end2="14" changelist="ce6a5935-0c5b-4cdc-ae17-63d44478dde5" />
+        <range start1="12" end1="12" start2="15" end2="16" changelist="d9ab4633-0c17-49be-aef9-ad5bd5498d51" />
+        <range start1="34" end1="35" start2="38" end2="39" changelist="d9ab4633-0c17-49be-aef9-ad5bd5498d51" />
+        <range start1="36" end1="38" start2="40" end2="42" changelist="ce6a5935-0c5b-4cdc-ae17-63d44478dde5" />
+        <range start1="39" end1="41" start2="43" end2="45" changelist="ce6a5935-0c5b-4cdc-ae17-63d44478dde5" />
+        <range start1="42" end1="45" start2="46" end2="49" changelist="d9ab4633-0c17-49be-aef9-ad5bd5498d51" />
+        <range start1="46" end1="49" start2="50" end2="58" changelist="d9ab4633-0c17-49be-aef9-ad5bd5498d51" />
+        <range start1="178" end1="178" start2="187" end2="241" changelist="ce6a5935-0c5b-4cdc-ae17-63d44478dde5" />
+        <range start1="252" end1="252" start2="315" end2="319" changelist="ce6a5935-0c5b-4cdc-ae17-63d44478dde5" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -165,7 +185,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725052325920</updated>
       <workItem from="1725052327017" duration="7922000" />
-      <workItem from="1725093700806" duration="14935000" />
+      <workItem from="1725093700806" duration="16179000" />
     </task>
     <servers />
   </component>

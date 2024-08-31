@@ -1,7 +1,9 @@
 package com.github.sniconmc.item;
 
+import com.github.sniconmc.skin.SkinUtils;
 import net.kyori.adventure.nbt.CompoundBinaryTag;
 import net.kyori.adventure.text.Component;
+import net.minestom.server.entity.Player;
 import net.minestom.server.item.ItemComponent;
 import net.minestom.server.item.ItemStack;
 import net.minestom.server.item.Material;
@@ -9,7 +11,9 @@ import net.minestom.server.item.component.CustomData;
 import net.minestom.server.item.component.DyedItemColor;
 import com.github.sniconmc.Main;
 import com.github.sniconmc.text.ColorUtils;
+import net.minestom.server.item.component.HeadProfile;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,21 +36,26 @@ import java.util.List;
 
 public class ItemStackBuilder {
 
-    private Material material;
+    private Material material = Material.AIR;
 
-    private Integer count;
-    private Integer maxStackSize;
+    private Integer count = 1;
+    private Integer maxStackSize = 64;
 
-    private Component name;
-    private List<Component> lore;
+    private Component name = Component.empty();
+    private List<Component> lore = new ArrayList<>();
 
-    private Boolean hasGlint;
-    private String dyeColor;
-    private Boolean showToolTips;
+    private Boolean hasGlint = false;
+    private String dyeColor = "";
+    private Boolean showToolTips = false;
 
-    private Boolean isVanillaItem;
-    private String function;
-    private String page;
+    private Player player;
+    private String skullOwner = "";
+    private String uuid = "";
+    private String texture = "";
+
+    private Boolean isVanillaItem = true;
+    private String function = "";
+    private String page = "";
 
     /**
 
@@ -178,6 +187,60 @@ public class ItemStackBuilder {
 
     /**
 
+     Sets the skin of the skull itemstack.
+
+     @param username The variable deciding the username of the player, or "this",
+     meaning to use the player class instead.
+     @param player The player class which skin will be used if username is "this"
+     @return This builder for chaining
+     */
+
+    public ItemStackBuilder playerSkull(String username, Player player) {
+        if (username == null) {
+            Main.logger.error("PlayerSkull cannot be null");
+            return this;
+        }
+        if (username.equals("this") && player != null) {
+            this.player = player;
+        }
+        this.skullOwner = username;
+        return this;
+    }
+
+    /**
+
+     Sets the player skin of an item using a UUID, which is only applicable if the item is a player head.
+
+     @param uuid The variable representing the player of which to get the skin from
+     @return This builder for chaining
+     */
+
+    public ItemStackBuilder uuid(String uuid) {
+        if (uuid == null) {
+            Main.logger.error("UUID cannot be null");
+        }
+        this.uuid = uuid;
+        return this;
+    }
+
+    /**
+
+     Sets the player skin of an item using a texture string, which is only applicable if the item is a player head.
+
+     @param texture The variable representing the skin used for the head
+     @return This builder for chaining
+     */
+
+    public ItemStackBuilder texture(String texture) {
+        if (texture == null) {
+            Main.logger.error("Texture cannot be null");
+        }
+        this.texture = texture;
+        return this;
+    }
+
+    /**
+
      Sets custom data used for checking if the item stack is a vanilla item or
      used for GUI purposes.
      In short, whether the player should be able to use this item.
@@ -249,6 +312,10 @@ public class ItemStackBuilder {
                 .set(ItemComponent.CUSTOM_DATA, new CustomData(CompoundBinaryTag.builder().putBoolean("isVanillaItem" ,isVanillaItem).build()))
                 .set(ItemComponent.CUSTOM_DATA, new CustomData(CompoundBinaryTag.builder().putString("function" ,function).build()))
                 .set(ItemComponent.CUSTOM_DATA, new CustomData(CompoundBinaryTag.builder().putString("page" ,page).build()));
+
+                if (material == Material.PLAYER_HEAD) {
+                    itemstack.set(ItemComponent.PROFILE, new HeadProfile(SkinUtils.getSkin(player, skullOwner, uuid, texture, "" )));
+                }
 
         return itemstack.build();
 
