@@ -6,22 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d9ab4633-0c17-49be-aef9-ad5bd5498d51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/connection/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/connection/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/entity/EntityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/entity/EntityUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/inventory/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/inventory/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/item/ItemStackBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/item/ItemStackBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/item/ItemStackDestroyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/item/ItemStackDestroyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/item/MaterialUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/item/MaterialUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/placeholder/PlaceholderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/placeholder/PlaceholderManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/placeholder/PlaceholderReplacer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/placeholder/PlaceholderReplacer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/skin/SkinUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/skin/SkinUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/sound/SoundUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/sound/SoundUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/text/ColorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/text/ColorUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/text/TextUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/text/TextUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/time/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/time/Time.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rip/snicon/weather/WeatherUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/sniconmc/weather/WeatherUtils.java" afterDir="false" />
     </list>
     <list id="ce6a5935-0c5b-4cdc-ae17-63d44478dde5" name="Changes by wilhe" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +41,11 @@
                 <item name="Minestom-Utils" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Minestom-Utils" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
             </expand>
             <select />
@@ -176,7 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725052325920</updated>
       <workItem from="1725052327017" duration="7922000" />
-      <workItem from="1725093700806" duration="12594000" />
+      <workItem from="1725093700806" duration="14935000" />
     </task>
     <servers />
   </component>

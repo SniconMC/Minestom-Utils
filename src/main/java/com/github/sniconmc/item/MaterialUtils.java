@@ -12,7 +12,6 @@ import com.github.sniconmc.Main;
  * correct namespace format ("minecraft:") used within the game.</p>
  *
  * @see Material
- * @see Player
  * @see <a href="https://javadoc.minestom.net/">Minestom Documentation</a>
  *
  * @author Wi1helm
@@ -26,14 +25,13 @@ public class MaterialUtils {
      * material ({@link Material#AIR}) is returned.
      *
      * @param itemId The string representation of the item ID to convert (e.g., "diamond_sword").
-     * @param player The {@link Player} for whom the conversion is being performed. This can be
-     *               useful for context-specific error handling or logging.
+     *
      * @return The corresponding {@link Material} object, or {@link Material#AIR} if the conversion fails.
      *
      * @author Wi1helm
      * @author znopp
      */
-    public static Material convertToNamespaceIdMaterial(String itemId, Player player) {
+    public static Material convertToNamespaceIdMaterial(String itemId) {
 
         // Convert the ID to lowercase and ensure it has the "minecraft:" prefix
         String namespaceId = itemId.toLowerCase();
