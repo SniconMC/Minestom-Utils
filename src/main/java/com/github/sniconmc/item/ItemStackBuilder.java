@@ -53,7 +53,7 @@ public class ItemStackBuilder {
     private String uuid = "";
     private String texture = "";
 
-    private Boolean isVanillaItem = true;
+    private Boolean isVanillaItem = false;
     private String function = "";
     private String page = "";
 
