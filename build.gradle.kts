@@ -1,8 +1,7 @@
 plugins {
-    id("java")
+    java
+    `maven-publish`
 }
-
-apply(plugin = "maven-publish")
 
 group = "rip.snicon"
 version = "0.1-dev"
@@ -26,6 +25,20 @@ tasks.withType<JavaCompile> {
 }
 
 java {
+    withSourcesJar()
+    withJavadocJar()
     sourceCompatibility = JavaVersion.VERSION_21
     targetCompatibility = JavaVersion.VERSION_21
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("mavenJava") {
+            from(components["java"])
+        }
+    }
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
