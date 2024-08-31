@@ -14,7 +14,7 @@ import net.minestom.server.inventory.InventoryType;
  *
  * @author Wi1helm
  */
-public class Inventory {
+public class InventoryUtils {
 
     /**
      * Determines the appropriate {@link InventoryType} based on the specified number of rows.

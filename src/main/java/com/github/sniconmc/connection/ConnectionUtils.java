@@ -2,7 +2,7 @@ package com.github.sniconmc.connection;
 
 import net.minestom.server.entity.Player;
 
-public class Connection {
+public class ConnectionUtils {
     // TODO Add JavaDoc and then functionality
     public static void connectToServer(Player player, String serverName){
         player.sendMessage("Connecting to server " + serverName + "...");

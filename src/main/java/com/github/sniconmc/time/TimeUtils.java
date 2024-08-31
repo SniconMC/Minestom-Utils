@@ -16,7 +16,7 @@ import java.util.List;
  *
  * @author znopp
  */
-public class Time {
+public class TimeUtils {
 
 
     /**
