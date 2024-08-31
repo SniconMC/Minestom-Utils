@@ -1,8 +1,8 @@
-package rip.snicon.item;
+package com.github.sniconmc.item;
 
 import net.minestom.server.entity.Player;
 import net.minestom.server.item.Material;
-import rip.snicon.Main;
+import com.github.sniconmc.Main;
 
 /**
  * Utility class for handling operations related to {@link Material} in a Minecraft server.

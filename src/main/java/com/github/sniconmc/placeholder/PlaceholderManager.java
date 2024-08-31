@@ -1,4 +1,4 @@
-package rip.snicon.placeholder;
+package com.github.sniconmc.placeholder;
 
 import net.minestom.server.entity.Player;
 import org.jetbrains.annotations.NotNull;

@@ -1,7 +1,7 @@
-package rip.snicon.sound;
+package com.github.sniconmc.sound;
 
 import net.minestom.server.sound.SoundEvent;
-import rip.snicon.Main;
+import com.github.sniconmc.Main;
 
 /**
  * Utility class for converting strings to sound-related types.

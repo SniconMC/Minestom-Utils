@@ -1,6 +1,6 @@
-package rip.snicon.time;
+package com.github.sniconmc.time;
 
-import rip.snicon.Main;
+import com.github.sniconmc.Main;
 
 import java.util.Arrays;
 import java.util.List;

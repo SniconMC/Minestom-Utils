@@ -1,4 +1,4 @@
-package rip.snicon.skin;
+package com.github.sniconmc.skin;
 
 import net.minestom.server.entity.Player;
 import net.minestom.server.entity.PlayerSkin;

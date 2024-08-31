@@ -1,4 +1,4 @@
-package rip.snicon.item;
+package com.github.sniconmc.item;
 
 import net.kyori.adventure.nbt.CompoundBinaryTag;
 import net.kyori.adventure.text.Component;
@@ -7,8 +7,8 @@ import net.minestom.server.item.ItemStack;
 import net.minestom.server.item.Material;
 import net.minestom.server.item.component.CustomData;
 import net.minestom.server.item.component.DyedItemColor;
-import rip.snicon.Main;
-import rip.snicon.text.ColorUtils;
+import com.github.sniconmc.Main;
+import com.github.sniconmc.text.ColorUtils;
 
 import java.util.List;
 

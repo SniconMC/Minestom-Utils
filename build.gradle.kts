@@ -3,7 +3,7 @@ plugins {
     `maven-publish`
 }
 
-group = "rip.snicon"
+group = "com.github.sniconmc"
 version = "0.1-dev"
 description = "The utilities used for all SniconMC Minestom servers"
 

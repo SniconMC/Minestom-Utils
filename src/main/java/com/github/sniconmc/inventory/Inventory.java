@@ -1,4 +1,4 @@
-package rip.snicon.inventory;
+package com.github.sniconmc.inventory;
 
 import net.minestom.server.inventory.InventoryType;
 

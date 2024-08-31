@@ -1,7 +1,7 @@
-package rip.snicon.weather;
+package com.github.sniconmc.weather;
 
 import net.minestom.server.instance.Weather;
-import rip.snicon.Main;
+import com.github.sniconmc.Main;
 
 import java.util.Arrays;
 import java.util.List;

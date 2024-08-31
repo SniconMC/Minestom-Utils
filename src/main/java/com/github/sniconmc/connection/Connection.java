@@ -1,4 +1,4 @@
-package rip.snicon.connection;
+package com.github.sniconmc.connection;
 
 import net.minestom.server.entity.Player;
 
