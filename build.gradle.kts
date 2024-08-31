@@ -18,7 +18,6 @@ dependencies {
     implementation("net.minestom:minestom-snapshots:65f75bb059") // Minestom
     implementation("ch.qos.logback:logback-classic:1.5.7") // Logback
     implementation("net.kyori:adventure-text-minimessage:4.17.0") // MiniMessage
-    implementation("com.github.SniconMC:Minestom-Utils:v0.1")
 }
 
 tasks.test {
@@ -29,6 +28,7 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
     }
+    to
 }
 
 tasks.withType(JavaCompile::class) {
