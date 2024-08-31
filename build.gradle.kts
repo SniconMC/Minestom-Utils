@@ -24,12 +24,6 @@ tasks.test {
     useJUnitPlatform()
 }
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-        vendor = JvmVendorSpec.ADOPTIUM
-    }
-}
 
 tasks.withType(JavaCompile::class) {
     sourceCompatibility = "21"
