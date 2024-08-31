@@ -1,8 +1,7 @@
-package com.github.sniconmc.item;
+package com.github.sniconmc.utils.item;
 
-import net.minestom.server.entity.Player;
 import net.minestom.server.item.Material;
-import com.github.sniconmc.Main;
+import com.github.sniconmc.utils.Main;
 
 /**
  * Utility class for handling operations related to {@link Material} in a Minecraft server.

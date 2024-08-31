@@ -1,6 +1,6 @@
-package com.github.sniconmc.item;
+package com.github.sniconmc.utils.item;
 
-import com.github.sniconmc.skin.SkinUtils;
+import com.github.sniconmc.utils.skin.SkinUtils;
 import net.kyori.adventure.nbt.CompoundBinaryTag;
 import net.kyori.adventure.text.Component;
 import net.minestom.server.entity.Player;
@@ -9,8 +9,8 @@ import net.minestom.server.item.ItemStack;
 import net.minestom.server.item.Material;
 import net.minestom.server.item.component.CustomData;
 import net.minestom.server.item.component.DyedItemColor;
-import com.github.sniconmc.Main;
-import com.github.sniconmc.text.ColorUtils;
+import com.github.sniconmc.utils.Main;
+import com.github.sniconmc.utils.text.ColorUtils;
 import net.minestom.server.item.component.HeadProfile;
 
 import java.util.ArrayList;

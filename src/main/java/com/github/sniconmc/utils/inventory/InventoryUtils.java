@@ -1,4 +1,4 @@
-package com.github.sniconmc.inventory;
+package com.github.sniconmc.utils.inventory;
 
 import net.minestom.server.inventory.InventoryType;
 

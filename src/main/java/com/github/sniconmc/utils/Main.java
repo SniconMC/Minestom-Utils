@@ -1,4 +1,4 @@
-package com.github.sniconmc;
+package com.github.sniconmc.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

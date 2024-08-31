@@ -1,4 +1,4 @@
-package com.github.sniconmc.item;
+package com.github.sniconmc.utils.item;
 
 import net.kyori.adventure.nbt.CompoundBinaryTag;
 import net.kyori.adventure.text.Component;
@@ -8,7 +8,7 @@ import net.minestom.server.item.ItemStack;
 import net.minestom.server.item.Material;
 import net.minestom.server.item.component.CustomData;
 import net.minestom.server.item.component.HeadProfile;
-import com.github.sniconmc.text.TextUtils;
+import com.github.sniconmc.utils.text.TextUtils;
 import java.util.List;
 import java.util.Objects;
 

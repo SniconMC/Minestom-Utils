@@ -1,4 +1,4 @@
-package com.github.sniconmc.text;
+package com.github.sniconmc.utils.text;
 
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextColor;

@@ -1,4 +1,4 @@
-package com.github.sniconmc.placeholder;
+package com.github.sniconmc.utils.placeholder;
 
 import net.minestom.server.entity.Player;
 import java.util.Map;

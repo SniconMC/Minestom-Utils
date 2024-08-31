@@ -1,4 +1,4 @@
-package com.github.sniconmc.entity;
+package com.github.sniconmc.utils.entity;
 
 import net.minestom.server.entity.EntityType;
 

@@ -1,7 +1,7 @@
-package com.github.sniconmc.sound;
+package com.github.sniconmc.utils.sound;
 
 import net.minestom.server.sound.SoundEvent;
-import com.github.sniconmc.Main;
+import com.github.sniconmc.utils.Main;
 
 /**
  * Utility class for converting strings to sound-related types.

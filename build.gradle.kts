@@ -3,7 +3,7 @@ plugins {
     `maven-publish`
 }
 
-group = "com.github.sniconmc"
+group = "com.github.sniconmc.utils"
 version = "0.1-dev"
 description = "The utilities used for all SniconMC Minestom servers"
 
@@ -50,8 +50,4 @@ publishing {
             }
         }
     }
-}
-
-tasks.test {
-    useJUnitPlatform()
 }

@@ -1,4 +1,4 @@
-package com.github.sniconmc.text;
+package com.github.sniconmc.utils.text;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;

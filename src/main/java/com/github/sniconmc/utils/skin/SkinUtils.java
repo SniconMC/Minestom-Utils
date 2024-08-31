@@ -1,4 +1,4 @@
-package com.github.sniconmc.skin;
+package com.github.sniconmc.utils.skin;
 
 import net.minestom.server.entity.Player;
 import net.minestom.server.entity.PlayerSkin;

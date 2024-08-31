@@ -1,6 +1,6 @@
-package com.github.sniconmc.time;
+package com.github.sniconmc.utils.time;
 
-import com.github.sniconmc.Main;
+import com.github.sniconmc.utils.Main;
 
 import java.util.Arrays;
 import java.util.List;
