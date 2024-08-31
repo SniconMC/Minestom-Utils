@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9ab4633-0c17-49be-aef9-ad5bd5498d51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/placeholder/PlaceholderManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/placeholder/PlaceholderReplacer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/time/Time.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rip/snicon/weather/WeatherUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <list id="ce6a5935-0c5b-4cdc-ae17-63d44478dde5" name="Changes by wilhe" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +19,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Minestom-Utils" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725052325920</updated>
       <workItem from="1725052327017" duration="7922000" />
-      <workItem from="1725093700806" duration="1455000" />
+      <workItem from="1725093700806" duration="3775000" />
     </task>
     <servers />
   </component>
