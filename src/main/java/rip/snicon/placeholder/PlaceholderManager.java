@@ -15,11 +15,8 @@ import java.util.Map;
  *   <li>The outer map is keyed by the {@code Player} object.</li>
  *   <li>The inner map is keyed by the placeholder name (a {@code String}), with its corresponding value (also a {@code String}).</li>
  * </ul>
- * </p>
- * <p>
  * This class provides functionality to add, update, retrieve, and remove placeholders for players.
  * It ensures that players can have multiple placeholders without overwriting existing data unintentionally.
- * </p>
  */
 
 public class PlaceholderManager {
@@ -148,7 +145,7 @@ public class PlaceholderManager {
      *   placeholders is updated in the {@code playerPlaceholders} map.</li>
      *   <li>If the placeholder key does not exist in the player's map, no changes are made.</li>
      * </ul>
-     * </p>
+     *
      *
      * @param player the {@code Player} object from whom the placeholder should be removed.
      *               If the player is not found in the main map, no action is taken.

@@ -16,8 +16,8 @@ import net.kyori.adventure.text.format.TextColor;
  *
  * @author znopp
  */
-public class ColorUtils {
 
+public class ColorUtils {
 
     /**
      * Validates whether a given string is a valid hex color code.
