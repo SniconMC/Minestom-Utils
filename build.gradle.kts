@@ -28,22 +28,10 @@ tasks.test {
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
-        vendor = JvmVendorSpec.ADOPTIUM // You can use ADOPTIUM, GRAALVM, etc., based on preference
     }
 }
 
-tasks.compileJava {
+tasks.withType(JavaCompile::class) {
     sourceCompatibility = "21"
     targetCompatibility = "21"
-}
-
-// Enable Gradle to download toolchains from the specified repository
-javaToolchains {
-    repositories {
-        mavenCentral()
-        gradlePluginPortal()
-        maven {
-            url = uri("https://repo.gradle.org/gradle/libs-releases-local/")
-        }
-    }
 }
