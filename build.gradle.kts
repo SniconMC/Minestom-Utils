@@ -5,6 +5,7 @@ plugins {
 
 group = "rip.snicon"
 version = "0.1-dev"
+description = "The utilities used for all SniconMC Minestom servers"
 
 repositories {
     mavenCentral()
@@ -33,8 +34,20 @@ java {
 
 publishing {
     publications {
-        create<MavenPublication>("mavenJava") {
+        create<MavenPublication>("maven") {
             from(components["java"])
+
+            pom{
+                name = "Minestom-Utils"
+                description = project.description
+                url = "https://github.com/SniconMC/Minestom-Utils"
+                licenses {
+                    license {
+                        name = "The GNU Affero General Public License Version 3"
+                        url = "https://www.gnu.org/licenses/agpl-3.0.txt"
+                    }
+                }
+            }
         }
     }
 }
