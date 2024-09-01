@@ -53,7 +53,7 @@ public class ItemStackBuilder {
     private String uuid = "";
     private String texture = "";
 
-    private Boolean isVanillaItem = false;
+    private Boolean is_vanilla_item = false;
     private String function = "";
     private String page = "";
 
@@ -245,15 +245,15 @@ public class ItemStackBuilder {
      used for GUI purposes.
      In short, whether the player should be able to use this item.
 
-     @param isVanillaItem The variable setting the vanilla-ness of the item
+     @param is_vanilla_item The variable setting the vanilla-ness of the item
      @return This builder for chaining
      */
 
-    public ItemStackBuilder isVanillaItem(Boolean isVanillaItem) {
-        if (isVanillaItem == null) {
-            UtilsMain.logger.error("IsVanillaItem cannot be null");
+    public ItemStackBuilder isVanillaItem(Boolean is_vanilla_item) {
+        if (is_vanilla_item == null) {
+            UtilsMain.logger.error("is_vanilla_item cannot be null");
         }
-        this.isVanillaItem = isVanillaItem;
+        this.is_vanilla_item = is_vanilla_item;
         return this;
     }
 
@@ -309,7 +309,7 @@ public class ItemStackBuilder {
                     itemstack.set(ItemComponent.HIDE_TOOLTIP);
                 }
         itemstack
-                .set(ItemComponent.CUSTOM_DATA, new CustomData(CompoundBinaryTag.builder().putBoolean("isVanillaItem" ,isVanillaItem).putString("function" ,function).putString("page" ,page).build()));
+                .set(ItemComponent.CUSTOM_DATA, new CustomData(CompoundBinaryTag.builder().putBoolean("is_vanilla_item" ,is_vanilla_item).putString("function" ,function).putString("page" ,page).build()));
 
                 if (material == Material.PLAYER_HEAD) {
                     itemstack.set(ItemComponent.PROFILE, new HeadProfile(SkinUtils.getSkin(player, skullOwner, uuid, texture, "" )));
