@@ -1,11 +1,11 @@
 plugins {
-    java
-    `maven-publish`
+    id("java")
+    id("maven-publish")
 }
 
 group = "com.github.sniconmc.utils"
 version = "0.1-dev"
-description = "The utilities used for all SniconMC servers"
+description = "Utils dependency for the SniconMC Network"
 
 repositories {
     mavenCentral()
@@ -38,9 +38,9 @@ publishing {
             from(components["java"])
 
             pom{
-                name = "Minestom-Utils"
+                name = "Utils"
                 description = project.description
-                url = "https://github.com/SniconMC/Minestom-Utils"
+                url = "https://github.com/SniconMC/Utils"
                 licenses {
                     license {
                         name = "The GNU Affero General Public License Version 3"

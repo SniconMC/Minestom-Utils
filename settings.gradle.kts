@@ -1,1 +1,1 @@
-rootProject.name = "Minestom-Utils"
+rootProject.name = "Utils"
