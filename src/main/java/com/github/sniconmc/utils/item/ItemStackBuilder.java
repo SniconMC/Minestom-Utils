@@ -305,13 +305,11 @@ public class ItemStackBuilder {
                 .glowing(hasGlint)
                 .set(ItemComponent.DYED_COLOR, new DyedItemColor(ColorUtils.StringToRgb(dyeColor), false));
 
-                if (showToolTips) {
+                if (!showToolTips) {
                     itemstack.set(ItemComponent.HIDE_TOOLTIP);
                 }
         itemstack
-                .set(ItemComponent.CUSTOM_DATA, new CustomData(CompoundBinaryTag.builder().putBoolean("isVanillaItem" ,isVanillaItem).build()))
-                .set(ItemComponent.CUSTOM_DATA, new CustomData(CompoundBinaryTag.builder().putString("function" ,function).build()))
-                .set(ItemComponent.CUSTOM_DATA, new CustomData(CompoundBinaryTag.builder().putString("page" ,page).build()));
+                .set(ItemComponent.CUSTOM_DATA, new CustomData(CompoundBinaryTag.builder().putBoolean("isVanillaItem" ,isVanillaItem).putString("function" ,function).putString("page" ,page).build()));
 
                 if (material == Material.PLAYER_HEAD) {
                     itemstack.set(ItemComponent.PROFILE, new HeadProfile(SkinUtils.getSkin(player, skullOwner, uuid, texture, "" )));
