@@ -9,7 +9,7 @@ import net.minestom.server.item.ItemStack;
 import net.minestom.server.item.Material;
 import net.minestom.server.item.component.CustomData;
 import net.minestom.server.item.component.DyedItemColor;
-import com.github.sniconmc.utils.Main;
+import com.github.sniconmc.utils.UtilsMain;
 import com.github.sniconmc.utils.text.ColorUtils;
 import net.minestom.server.item.component.HeadProfile;
 
@@ -67,7 +67,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder material(Material material) {
         if (material == null) {
-            Main.logger.error("Material cannot be null");
+            UtilsMain.logger.error("Material cannot be null");
         }
         this.material = material;
         return this;
@@ -83,7 +83,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder count(Integer count) {
         if (count == null) {
-            Main.logger.error("Count cannot be null");
+            UtilsMain.logger.error("Count cannot be null");
         }
         this.count = count;
         return this;
@@ -99,7 +99,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder maxStackSize(Integer maxStackSize) {
         if (maxStackSize == null) {
-            Main.logger.error("MaxStackSize cannot be null");
+            UtilsMain.logger.error("MaxStackSize cannot be null");
         }
         this.maxStackSize = maxStackSize;
         return this;
@@ -115,7 +115,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder name(Component name) {
         if (name == null) {
-            Main.logger.error("Name cannot be null");
+            UtilsMain.logger.error("Name cannot be null");
         }
         this.name = name;
         return this;
@@ -131,7 +131,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder lore(List<Component> lore) {
         if (lore == null) {
-            Main.logger.error("Lore cannot be null");
+            UtilsMain.logger.error("Lore cannot be null");
         }
         this.lore = lore;
         return this;
@@ -147,7 +147,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder glint(Boolean glint) {
         if (glint == null) {
-            Main.logger.error("Glint cannot be null");
+            UtilsMain.logger.error("Glint cannot be null");
         }
         this.hasGlint = glint;
         return this;
@@ -163,7 +163,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder dyeColor(String dyeColor) {
         if (dyeColor == null) {
-            Main.logger.error("DyeColor cannot be null");
+            UtilsMain.logger.error("DyeColor cannot be null");
         }
         this.dyeColor = dyeColor;
         return this;
@@ -179,7 +179,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder showToolTips(Boolean showToolTips) {
         if (showToolTips == null) {
-            Main.logger.error("ShowToolTips cannot be null");
+            UtilsMain.logger.error("ShowToolTips cannot be null");
         }
         this.showToolTips = showToolTips;
         return this;
@@ -197,7 +197,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder playerSkull(String username, Player player) {
         if (username == null) {
-            Main.logger.error("PlayerSkull cannot be null");
+            UtilsMain.logger.error("PlayerSkull cannot be null");
             return this;
         }
         if (username.equals("this") && player != null) {
@@ -217,7 +217,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder uuid(String uuid) {
         if (uuid == null) {
-            Main.logger.error("UUID cannot be null");
+            UtilsMain.logger.error("UUID cannot be null");
         }
         this.uuid = uuid;
         return this;
@@ -233,7 +233,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder texture(String texture) {
         if (texture == null) {
-            Main.logger.error("Texture cannot be null");
+            UtilsMain.logger.error("Texture cannot be null");
         }
         this.texture = texture;
         return this;
@@ -251,7 +251,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder isVanillaItem(Boolean isVanillaItem) {
         if (isVanillaItem == null) {
-            Main.logger.error("IsVanillaItem cannot be null");
+            UtilsMain.logger.error("IsVanillaItem cannot be null");
         }
         this.isVanillaItem = isVanillaItem;
         return this;
@@ -267,7 +267,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder function(String function) {
         if (function == null) {
-            Main.logger.error("Function cannot be null");
+            UtilsMain.logger.error("Function cannot be null");
         }
         this.function = function;
         return this;
@@ -283,7 +283,7 @@ public class ItemStackBuilder {
 
     public ItemStackBuilder page(String page) {
         if (page == null) {
-            Main.logger.error("Page cannot be null");
+            UtilsMain.logger.error("Page cannot be null");
         }
         this.page = page;
         return this;

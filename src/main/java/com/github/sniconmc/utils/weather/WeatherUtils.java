@@ -1,7 +1,7 @@
 package com.github.sniconmc.utils.weather;
 
 import net.minestom.server.instance.Weather;
-import com.github.sniconmc.utils.Main;
+import com.github.sniconmc.utils.UtilsMain;
 
 import java.util.Arrays;
 import java.util.List;
@@ -46,8 +46,8 @@ public class WeatherUtils {
                 default -> Weather.CLEAR;
             };
         } else {
-            Main.logger.warn("Weather " + name + " not found!");
-            Main.logger.warn("Defaulting to CLEAR");
+            UtilsMain.logger.warn("Weather " + name + " not found!");
+            UtilsMain.logger.warn("Defaulting to CLEAR");
             return Weather.CLEAR;
         }
 

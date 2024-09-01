@@ -13,11 +13,11 @@ import org.slf4j.LoggerFactory;
  * @author ChatGPT
  */
 
-public class Main {
+public class UtilsMain {
 
-    public static final Logger logger = LoggerFactory.getLogger(Main.class);
+    public static final Logger logger = LoggerFactory.getLogger(UtilsMain.class);
 
-    public static void main(String[] args) {
+    public static void init() {
         logger.info("Utils dependency initialized");
 
     }

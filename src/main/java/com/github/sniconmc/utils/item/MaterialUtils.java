@@ -1,7 +1,7 @@
 package com.github.sniconmc.utils.item;
 
 import net.minestom.server.item.Material;
-import com.github.sniconmc.utils.Main;
+import com.github.sniconmc.utils.UtilsMain;
 
 /**
  * Utility class for handling operations related to {@link Material} in a Minecraft server.
@@ -47,8 +47,8 @@ public class MaterialUtils {
             return material;
         } catch (IllegalArgumentException e) {
             // Handle the case where the cleaned ID is not a valid Material
-            Main.logger.warn("Invalid material ID: " + namespaceId);
-            Main.logger.warn("Defaulting to Air");
+            UtilsMain.logger.warn("Invalid material ID: " + namespaceId);
+            UtilsMain.logger.warn("Defaulting to Air");
             return Material.AIR; // Return a default or placeholder material if the conversion fails
         }
     }

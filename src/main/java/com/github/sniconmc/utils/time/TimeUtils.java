@@ -1,6 +1,6 @@
 package com.github.sniconmc.utils.time;
 
-import com.github.sniconmc.utils.Main;
+import com.github.sniconmc.utils.UtilsMain;
 
 import java.util.Arrays;
 import java.util.List;
@@ -59,8 +59,8 @@ public class TimeUtils {
         try {
             return Long.parseLong(name);
         } catch (NumberFormatException e) {
-            Main.logger.warn("Invalid number, or malformed word: " + e);
-            Main.logger.warn("Defaulting to noon (6000)");
+            UtilsMain.logger.warn("Invalid number, or malformed word: " + e);
+            UtilsMain.logger.warn("Defaulting to noon (6000)");
             return 6000;
         }
     }

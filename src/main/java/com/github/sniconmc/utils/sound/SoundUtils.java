@@ -1,7 +1,7 @@
 package com.github.sniconmc.utils.sound;
 
 import net.minestom.server.sound.SoundEvent;
-import com.github.sniconmc.utils.Main;
+import com.github.sniconmc.utils.UtilsMain;
 
 /**
  * Utility class for converting strings to sound-related types.
@@ -34,8 +34,8 @@ public class SoundUtils {
         try {
             return SoundEvent.fromNamespaceId(soundName);
         } catch (Exception e) {
-            Main.logger.warn("Invalid sound name: {}, cause: {}", soundName, e.getMessage());
-            Main.logger.warn("Switching to default sound event");
+            UtilsMain.logger.warn("Invalid sound name: {}, cause: {}", soundName, e.getMessage());
+            UtilsMain.logger.warn("Switching to default sound event");
             return SoundEvent.BLOCK_GRASS_BREAK;
         }
     }
