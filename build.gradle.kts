@@ -5,7 +5,7 @@ plugins {
 
 group = "com.github.sniconmc.utils"
 version = "0.1-dev"
-description = "The utilities used for all SniconMC Minestom servers"
+description = "The utilities used for all SniconMC servers"
 
 repositories {
     mavenCentral()
