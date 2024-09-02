@@ -1,5 +1,6 @@
 package com.github.sniconmc.utils.text;
 
+import com.github.sniconmc.utils.UtilsMain;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextColor;
 
@@ -59,30 +60,16 @@ public class ColorUtils {
                 int color = Integer.parseInt(hex.substring(1), 16);
                 return TextColor.color(color);
             } catch (NumberFormatException e) {
-                e.printStackTrace();
+                UtilsMain.logger.warn("Invalid hex color code: " + hex);
+                UtilsMain.logger.warn("Defaulting to gray...");
+                return TextColor.color(0xAAAAAA);
             }
         }
-        return switch (hex.toLowerCase()) {
-            case "black" -> NamedTextColor.BLACK;
-            case "dark_blue" -> NamedTextColor.DARK_BLUE;
-            case "dark_green" -> NamedTextColor.DARK_GREEN;
-            case "dark_aqua" -> NamedTextColor.DARK_AQUA;
-            case "dark_red" -> NamedTextColor.DARK_RED;
-            case "dark_purple" -> NamedTextColor.DARK_PURPLE;
-            case "gray", "grey" -> NamedTextColor.GRAY;
-            case "dark_gray", "dark_grey" -> NamedTextColor.DARK_GRAY;
-            case "blue" -> NamedTextColor.BLUE;
-            case "green" -> NamedTextColor.GREEN;
-            case "aqua" -> NamedTextColor.AQUA;
-            case "red" -> NamedTextColor.RED;
-            case "gold" -> NamedTextColor.GOLD;
-            case "light_purple" -> NamedTextColor.LIGHT_PURPLE;
-            case "yellow" -> NamedTextColor.YELLOW;
-            case "white" -> NamedTextColor.WHITE;
-            default ->
-                // Handle unknown colors
-                    NamedTextColor.WHITE; // Default to white or handle as needed
-        };
+
+        NamedTextColor namedColor = NamedTextColor.NAMES.value(hex.toLowerCase());
+
+        // Return the named color if found; otherwise, return a default color
+        return (namedColor != null) ? namedColor : NamedTextColor.WHITE;
     }
 
     /**
