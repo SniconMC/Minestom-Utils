@@ -23,6 +23,7 @@ dependencies {
 tasks.withType<JavaCompile> {
     sourceCompatibility = "21"
     targetCompatibility = "21"
+    options.encoding = "UTF-8"
 }
 
 java {
