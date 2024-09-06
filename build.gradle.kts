@@ -26,6 +26,12 @@ tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
 }
 
+tasks {
+    compileJava {
+        options.encoding = "UTF-8"
+    }
+}
+
 java {
     withSourcesJar()
     withJavadocJar()
