@@ -40,7 +40,7 @@ public class TextUtils {
      * @author znopp
      */
 
-    public static Component convertStringToComponent(List<String> minimessages) {
+    public static Component convertStringListToComponent(List<String> minimessages) {
         Component comp = Component.empty();
         MiniMessage miniMessage = MiniMessage.miniMessage();
 
@@ -68,7 +68,7 @@ public class TextUtils {
      * @author Wi1helm
      */
 
-    public static List<String> convertComponentToString(Component component) {
+    public static List<String> convertComponentToStringList(Component component) {
         List<String> strings = new ArrayList<>();
         strings.add(MiniMessage.miniMessage().serialize(component));
         return strings;
@@ -90,11 +90,11 @@ public class TextUtils {
      * @author znopp
      */
 
-    public static List<Component> convertListStringToListComponent(List<List<String>> list) {
+    public static List<Component> convertStringListListToListComponent(List<List<String>> list) {
         List<Component> components = new ArrayList<>();
 
         for (List<String> strings : list) {
-            components.add(convertStringToComponent(strings));
+            components.add(convertStringListToComponent(strings));
         }
         return components;
     }
@@ -103,7 +103,7 @@ public class TextUtils {
      * Converts a list of {@link Component} objects into a list of lists of strings.
      *
      * <p>This method iterates through a list of {@link Component} objects and converts each
-     * component into a list of strings using the {@link #convertComponentToString(Component)} method.
+     * component into a list of strings using the {@link #convertComponentToStringList(Component)} method.
      * The resulting list contains a list of strings for each component.</p>
      *
      * <p>The conversion is useful for cases where you need to represent complex text components
@@ -113,14 +113,21 @@ public class TextUtils {
      * @return a list of lists of strings, where each inner list represents the string representation of a {@link Component}
      */
 
-    public static List<List<String>> convertListComponentToListStringComponent(List<Component> components) {
+    public static List<List<String>> convertComponentListToListStringComponent(List<Component> components) {
         List<List<String>> list = new ArrayList<>();
 
         for (Component component : components) {
-            list.add(convertComponentToString(component));
+            list.add(convertComponentToStringList(component));
         }
 
         return list;
     }
-
+    
+    public static Component convertStringToComponent(String text) {
+        return MiniMessage.miniMessage().deserialize(text);
+    }
+    
+    public static String convertComponentToString(Component component) {
+        return MiniMessage.miniMessage().serialize(component);
+    }
 }

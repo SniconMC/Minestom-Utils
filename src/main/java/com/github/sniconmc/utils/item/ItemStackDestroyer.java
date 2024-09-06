@@ -83,13 +83,13 @@ public class ItemStackDestroyer {
         // Get name as both String list and component
         if (itemStack.get(ItemComponent.ITEM_NAME) != null){
             this.nameComponent = itemStack.get(ItemComponent.ITEM_NAME);
-            this.nameStringList = TextUtils.convertComponentToString(itemStack.get(ItemComponent.ITEM_NAME));
+            this.nameStringList = TextUtils.convertComponentToStringList(itemStack.get(ItemComponent.ITEM_NAME));
         }
 
         // Get lore as both list of Components and List of List of Strings
         if (itemStack.get(ItemComponent.LORE) != null) {
             this.loreComponent = itemStack.get(ItemComponent.LORE);
-            this.loreStringList = TextUtils.convertListComponentToListStringComponent(Objects.requireNonNull(itemStack.get(ItemComponent.LORE)));
+            this.loreStringList = TextUtils.convertComponentListToListStringComponent(Objects.requireNonNull(itemStack.get(ItemComponent.LORE)));
         }
         // Get if it has a glint
         this.glint = Boolean.TRUE.equals(itemStack.get(ItemComponent.ENCHANTMENT_GLINT_OVERRIDE));
