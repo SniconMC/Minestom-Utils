@@ -3,10 +3,13 @@ package com.github.sniconmc.utils.item;
 import com.github.sniconmc.utils.skin.SkinUtils;
 import net.kyori.adventure.nbt.CompoundBinaryTag;
 import net.kyori.adventure.text.Component;
+import net.minestom.server.FeatureFlag;
+import net.minestom.server.component.DataComponent;
 import net.minestom.server.entity.Player;
 import net.minestom.server.item.ItemComponent;
 import net.minestom.server.item.ItemStack;
 import net.minestom.server.item.Material;
+import net.minestom.server.item.component.AttributeList;
 import net.minestom.server.item.component.CustomData;
 import net.minestom.server.item.component.DyedItemColor;
 import com.github.sniconmc.utils.UtilsMain;
@@ -303,8 +306,8 @@ public class ItemStackBuilder {
                 .set(ItemComponent.ITEM_NAME, name)
                 .set(ItemComponent.LORE, lore)
                 .glowing(hasGlint)
-                .set(ItemComponent.DYED_COLOR, new DyedItemColor(ColorUtils.StringToRgb(dyeColor), false));
-
+                .set(ItemComponent.DYED_COLOR, new DyedItemColor(ColorUtils.StringToRgb(dyeColor), false))
+                .set(ItemComponent.ATTRIBUTE_MODIFIERS, new AttributeList(AttributeList.EMPTY.modifiers(), false));
                 if (!showToolTips) {
                     itemstack.set(ItemComponent.HIDE_TOOLTIP);
                 }
@@ -314,6 +317,7 @@ public class ItemStackBuilder {
                 if (material == Material.PLAYER_HEAD) {
                     itemstack.set(ItemComponent.PROFILE, new HeadProfile(SkinUtils.getSkin(player, skullOwner, uuid, texture, "" )));
                 }
+
 
         return itemstack.build();
 
