@@ -124,7 +124,8 @@ public class TextUtils {
     }
     
     public static Component convertStringToComponent(String text) {
-        return MiniMessage.miniMessage().deserialize(text);
+        String newText = "<reset><italic:false><#818181>" + text + "<reset>";
+        return MiniMessage.miniMessage().deserialize(newText);
     }
     
     public static String convertComponentToString(Component component) {
